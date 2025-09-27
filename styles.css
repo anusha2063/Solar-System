@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  color: #ffe066;
+  text-shadow: 0 2px 16px #222, 0 0 8px #ffe066;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  z-index: 10;
+  user-select: none;
+  pointer-events: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+.solar-title {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Orbitron', 'Segoe UI', 'Arial', sans-serif;
+
+
+    font-size: 5rem;
+
+  body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+}
+
+.solar-title {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Orbitron', 'Segoe UI', 'Arial', sans-serif;
+  font-size: 5rem;
+  background: linear-gradient(90deg, #ffe066 0%, #ff6f61 40%, #5f9ea0 60%, #ffe066 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    0 2px 16px #222,
+    0 0 8px #ffe066,
+    0 0 24px #ff6f61,
+    0 0 32px #5f9ea0;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  z-index: 10;
+  user-select: none;
+  pointer-events: none;
+  animation: solarTitlePulse 2.5s infinite alternate;
+}
+
+@keyframes solarTitlePulse {
+  0% {
+    text-shadow:
+      0 2px 16px #222,
+      0 0 8px #ffe066,
+      0 0 24px #ff6f61,
+      0 0 32px #5f9ea0;
+    letter-spacing: 0.18em;
+  font-size: 5rem;
+  }
+  100% {
+    text-shadow:
+      0 4px 32px #222,
+      0 0 24px #ffe066,
+      0 0 48px #ff6f61,
+      0 0 64px #5f9ea0;
+    letter-spacing: 0.22em;
+  font-size: 5.5rem;
+  }
+}
+}
